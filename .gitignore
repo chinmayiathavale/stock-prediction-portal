@@ -186,4 +186,16 @@ psd
 thumb
 sketch
 
+## text files like notes.txt ##
+### Text ###
+*.doc
+*.docx
+#*.log
+*.msg
+*.pages
+*.rtf
+*.txt
+*.wpd
+*.wps
+
 # End of https://www.toptal.com/developers/gitignore/api/django,react
