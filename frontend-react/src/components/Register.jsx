@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSpinner } from '@awesome.me/kit-KIT_CODE/icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSpinner } from '@awesome.me/kit-KIT_CODE/icons'
 
 const Register = () => {
 
@@ -60,7 +60,8 @@ const Register = () => {
                 </div>
                 {success && <div className='alert alert-success'>Registration successful</div>}
                 {loading ?
-                  <button type='submit' className='btn btn-info d-block mx-auto' disabled> <FontAwesomeIcon icon={faSpinner} spin /> Please wait ...</button> :
+                  // <button type='submit' className='btn btn-info d-block mx-auto' disabled> <FontAwesomeIcon icon={faSpinner} spin /> Please wait ...</button> :
+                  <button type='submit' className='btn btn-info d-block mx-auto' disabled>Please wait ...</button> :
                   <button type='submit' className='btn btn-info d-block mx-auto'>Register</button>
                 }
               </form>
