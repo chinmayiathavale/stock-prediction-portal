@@ -4,6 +4,7 @@ import {useNavigate} from'react-router-dom'
 import { useContext } from 'react'
 
 import { AuthContext } from '../AuthProvider'
+import axiosInstance from '../axiosInstance'
 
 const Login = () => {
 
@@ -38,7 +39,7 @@ const Login = () => {
       // setIsLoggedIn(true);
       setIsLoggedIn(true)
       setErrors('')
-      navigate('/')
+      navigate('/dashboard')
 
     } catch(error) {
       console.log('Invalid Credentials')
